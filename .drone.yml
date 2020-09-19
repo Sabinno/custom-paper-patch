@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: custom-paper-patch
+
+steps:
+- name: build
+  image: maven:3-jdk-8
+  commands:
+  - git clone --bare https://github.com/PaperMC/Paper.git
+  - ./paper jar
