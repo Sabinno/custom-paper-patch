@@ -8,5 +8,6 @@ steps:
   commands:
   - git clone --bare https://github.com/PaperMC/Paper.git
   - pwd
+  - ls -l
   - cd Paper
   - ./paper jar
