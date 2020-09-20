@@ -7,5 +7,6 @@ steps:
   image: maven:3-jdk-8
   commands:
   - git clone --bare https://github.com/PaperMC/Paper.git
+  - pwd
   - cd Paper
   - ./paper jar
